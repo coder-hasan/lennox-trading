@@ -1,0 +1,1474 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Lennox Treading
+    Template URI: 
+    Description: Lennox Treading - College University & Education HTML Template
+    Made By: Md. MAhmudul Hasan
+    URI: 
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Header Area CSS
+	3.  Banner Area
+	4.  Text Block CSS
+	5.  Course Area
+	6.  Team CSS
+	7.  Event & Blog CSS
+	8.  Subscribe Area
+	9. Testimonial CSS
+	10. Footer CSS
+-----------------------------------------------------------------------------------*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900|Satisfy'); */
+
+/* @font-face {
+    font-family: "SFProDisplay";
+    font-weight: 400;
+    src: url(assets/fonts/SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SFProText";
+    font-weight: 400; 
+    src: url(assets/fonts/SFProText-Regular.ttf);
+} */
+
+@font-face{ 
+	font-family: 'Geomanist';
+	src: url('../fonts/geomanist-regular-webfont.eot');
+	src: url('../fonts/geomanist-regular-webfont.eot') format('embedded-opentype'),
+	     url('../fonts/geomanist-regular-webfont.woff') format('woff'),
+	     url('../fonts/geomanist-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/geomanist-regular-webfont.svg') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Geomanist-Medium';
+    src: url('../fonts/Geomanist-Medium.eot');
+	src: url('../fonts/Geomanist-Medium.eot') format('embedded-opentype'),
+	     url('../fonts/Geomanist-Medium.woff') format('woff'),
+	     url('../fonts/Geomanist-Medium.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'Stolzl-Light';
+    src: url('../fonts/Stolzl-Light.eot');
+	src: url('../fonts/Stolzl-Light.eot') format('embedded-opentype'),
+	     url('../fonts/Stolzl-Light.woff') format('woff'),
+	     url('../fonts/Stolzl-Light.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'Stolzl-Medium';
+	src: url('../fonts/Stolzl-Medium.eot');
+	src: url('../fonts/Stolzl-Medium.eot') format('embedded-opentype'),
+	     url('../fonts/Stolzl-Medium.woff') format('woff'),
+	     url('../fonts/Stolzl-Medium.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'Stolzl-Bold';
+	src: url('../fonts/Stolzl-Bold.eot');
+	src: url('../fonts/Stolzl-Bold.eot') format('embedded-opentype'),
+	     url('../fonts/Stolzl-Bold.woff') format('woff'),
+	     url('../fonts/Stolzl-Bold.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'Saudagar';
+	src: url('../fonts/Saudagar.ttf') format('truetype');
+}
+
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+	/* font-family: 'Roboto', sans-serif; */
+	font-size:14px;
+	line-height:26px;
+	/* color:#343e51; */
+	font-weight:normal;
+	transition:.3s;
+	/* overflow-x:hidden; */
+    background-color: #ffffff;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header{
+    padding: 27px 0;
+    text-align: center;
+    background-color: #f0ecda;
+}
+header .logo{
+    width: 310px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.about_person{
+    padding: 6px 0 66px 0;
+    background: rgba(0, 0, 0, 0) url("../images/bg1.png") no-repeat scroll center center / cover ;
+    position: relative;
+    z-index: 2;
+}
+
+.about_person_menu{
+    width: 62.37%;
+    margin-left: 356px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_person_menu .menu_btns a{
+    font-family: 'Geomanist',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22.92px;
+    padding: 12px 19px;
+    transition: all 0.3s ease;
+}
+
+.about_person_menu .menu_btns a.why_book{
+    margin-right: 12px;
+    background-color: #1e6c75;
+    color: #deeaee;
+}
+
+.about_person_menu .menu_btns a.why_book:hover{
+    background-color: #ded9bd;
+    color: #68681e;
+}
+
+.about_person_menu .menu_btns a.about_btn{
+    background-color: #ded9bd;
+    color: #68681e;
+}
+
+.about_person_menu .menu_btns a.about_btn:hover{
+    background-color: #1e6c75;
+    color: #deeaee;
+}
+
+.about_person_menu .login_registration_btn{position: relative;}
+
+.about_person_menu .login_registration_btn::after{
+    content: "";
+    background-color: #faf5e6;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+}
+
+.about_person_menu .login_registration_btn a{
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17.27px;
+    color: #faf5e6;
+    padding: 5px 6px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.about_person_menu .login_registration_btn a:not(:last-child)::after{
+    /* border-right: 1px solid #faf5e6; */
+    content: '|';
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: #faf5e6;
+    position: absolute;
+    right: -3px;   
+}
+
+.about_person_menu .login_registration_btn a:hover{
+    color: #007bff;
+}
+
+.about_author{
+    width: 96.8%;
+    margin-top: 136px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(255, 255, 255, 0.8) 55%, transparent 80%) repeat scroll 0 0;
+    padding: 67px 0 25px 94px;
+}
+
+.about_author h2{
+    font-family: 'Geomanist-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 66.67px;
+    line-height: 1.15;
+    color: #68681e;
+    margin-bottom: 7px;
+}
+
+.about_author p{
+    font-size: 29.17px;
+    line-height: 1.15;
+    font-family: 'Geomanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #68681e;
+    width: 67.7%;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.learn_about{
+    text-align: center;
+    width: 46.8%;
+    margin: 49px auto 0 auto;
+}
+
+.learn_about p{
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 29.17px;
+    line-height: 1.15;
+    color: #f9f2e1;
+    font-weight: 400;
+    margin: 0 0 26px 0;
+}
+
+.learn_about a{
+    text-transform: uppercase;
+    color: #f9f2e1;
+    padding: 20px 73px;
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 29.17px;
+    line-height: 1.15;
+    border: 1px solid #e5dccd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.learn_about a:hover{
+    background-color: #166065;
+    border-color: #166065;
+}
+
+.about_us {
+    position: relative;
+    z-index: 1;
+    height: 996px;
+}
+
+.about_us::before{
+    content: "";
+    background: url("../images/about-us-bg1.png") no-repeat scroll center center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    z-index: -1;
+}
+
+.about_us::after{
+    content: "";
+    background: rgba(0, 0, 0, 0) url(../images/about-us-bg2.png) no-repeat center center / cover;
+    /* background-position: top center; */
+    position: absolute;
+    top: 26%;
+    left: 0;
+    width: 100%;
+    height: 74%;
+    z-index: -2;
+}
+
+.about_company{
+    width: 1158px;
+    height: 550px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #fdfbdd 38%, transparent 62%) repeat scroll 0 0;
+    margin-top: -66px;
+    padding: 134px 0 0 179px;
+}
+
+.about_company h2{
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37px;
+    line-height: 1.15;
+    color: #68681e;
+    margin: 0 0 47px 0;
+}
+
+.about_company p{
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    line-height: 1.35;
+    color: #68681e;
+    width: 92%;
+    margin: 0;
+}
+
+.about_founder{
+    margin-top: -20px;
+    position: relative;
+}
+
+.about_founder h2{
+    color: #fffffe;
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 58.33px;
+    line-height: 45.83px;
+    margin: 0px 0 59px 0;
+    text-align: center;
+}
+
+.about_founder p{
+    color: #ffffff;
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 43px 60px 54px 60px;
+    background-color: #6d9fca;
+    width: 58.2%;
+    margin: 0 0 0 217px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(19,25,38,0.45);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(19,25,38,0.45);
+    box-shadow: 0px 10px 20px 0px rgba(19,25,38,0.45);
+}
+
+.about_us img{
+    position: absolute;
+    bottom: 0;
+    right: 16%;
+    width: 283px;
+    height: auto;
+}
+
+.about_academy{
+    padding: 82px 0 0 0;
+    position: relative;
+}
+
+.about_academy_left{
+    width: 363px;
+    margin-right: 108px;
+}
+
+.about_academy_left img{
+    width: 100%;
+    height: auto;
+}
+
+/* .section_site_logo{
+    width: 363px;
+    height: 483px;
+    background-color: #faf9e9;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.section_site_logo h3::after{
+    content: "";
+    width: 229px;
+    height: 337px;
+    background-color: #ecf0d1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+
+.section_site_logo h3{
+    font-family: 'Saudagar';
+    text-align: right;
+    color: #67854e;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section_site_logo h3 span:nth-child(1){
+    font-size: 235.99px;
+    line-height: 39.33px;
+    letter-spacing: 10px;
+}
+
+.section_site_logo h3 span:nth-child(2){
+    font-size: 127.12px;
+    line-height: 33.33px;
+    letter-spacing: 12px;
+}
+
+.section_site_logo h3 span:nth-child(3){
+    font-size: 176.56px;
+    line-height: 95.34px;
+    letter-spacing: 12px;;
+} */
+
+.about_academy_text p{
+    margin: 216px 0 0 0;
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37.5px;
+    line-height: 50px;
+    color: #636360;
+    width: 1030px;
+}
+
+.success_section{
+    background: url("../images/success-bg.png") no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+    padding: 163px 0 188px 0;
+}
+
+.success_details{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.success_details .success_text{
+    background-color: #fafbf9;
+    padding: 34px 65px 42px 65px;
+    margin: 175px 60px 0 0;
+    width: 1043px;
+}
+
+.success_details .success_text p{
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    line-height: 33.33px;
+    color: #67854e;
+    margin: 0;
+}
+
+.success_img{
+    width: 340px;
+}
+
+.success_img img{
+    width: 100%;
+    height: auto;
+}
+
+.enterpreneur{
+    padding: 134px 0 110px 0;
+}
+
+.enterpreneur p{
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37.5px;
+    line-height: 50px;
+    color: #282827;
+    width: 1396px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.freedom{
+    height: 778px;
+    background: url(../images/freedom.png) no-repeat center center / cover;
+    padding-top: 458px;
+}
+
+.freedom h2{
+    color: #ffffff;
+    font-family: 'Stolzl-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 58.33px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.our_mission{
+    padding: 76px 0 67px 0;
+    background-color: #215d82;
+}
+
+.our_mission_heading{
+    text-align: center;
+    margin: 0 0 80px 0;
+}
+
+.our_mission_heading h2{
+    color: #f9f2e1;
+    font-family: 'Saudagar';
+    font-size: 75px;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.our_mission_heading h2::after{
+    content: "";
+    width: 82%;
+    height: 2px;
+    background-color: #f9f2e1;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.make_money p{
+    text-align: center;
+    color: #f9f2e1;
+    width: 910px;
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 41.67px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.make_money p > span{
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+.make_money p > span:not(:first-child){
+    font-size: 58.33px;
+    text-transform: lowercase;
+    display: inline-block;
+}
+
+.our_mission .learn_about{
+    margin: 84px auto 0 auto;
+    width: 52%;
+}
+
+.our_mission .learn_about p{
+    font-size: 33.33px;
+    letter-spacing: 1px;
+    margin: 0 0 21px 0;
+}
+
+.our_mission .learn_about a{
+    padding: 22px 73px;
+}
+
+.our_mission .learn_about a:hover{
+    background-color: #f9f2e1;
+    color: #215d82;
+}
+
+.consultation_call{
+    background: url(../images/laptop.png) no-repeat;
+    background-position: top right;
+    background-size: auto;
+    padding: 74px 0 462px 0;
+}
+
+.consultation_details{
+    padding: 0 128px;
+}
+
+.consultation_details h2{
+    font-family: 'Stolzl-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #68681e;
+    font-size: 41.67px;
+    width: 40%;
+}
+
+.consultation_details ul{
+    margin-top: 40px;
+}
+.consultation_details ul li{
+    list-style-type: none;
+    font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 29.17px;
+    color: #68681e;
+    padding: 5px 0;
+}
+
+.consultation_call .learn_about a {
+    color: #68681e;
+    padding: 20px 73px;
+    border: 2px solid #215d82;
+}
+
+.consultation_call .learn_about a:hover{
+    color: #215d82;
+    border: 2px solid #68681e;
+    background-color: transparent;
+}
+
+.go_up{display: none;}
+
+
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+    }
+    /* .about_us > .container{
+        max-width: 1400px;
+    } */
+    .about_academy .container {
+        max-width: 935px;
+    }
+}
+
+@media (min-width: 1400px){
+    .container {
+        max-width: 1350px;
+    }
+    .about_us > .container{
+        max-width: 1400px;
+    }
+    .about_academy .container{
+        max-width: 1010px;
+    }
+}
+
+@media (min-width: 1740px){
+    .container {
+        max-width: 1558px;
+    }
+    .about_us > .container{
+        max-width: 1740px;
+    }
+    .about_academy .container{
+        max-width: 1710px;
+    }
+}
+
+@media (max-width: 1739px){
+    header {
+        padding: 16px 0;
+    }
+    header .logo {
+        width: 200px;
+    }
+    .about_person {
+        padding: 6px 0 40px 0;
+    }
+    .about_person_menu {
+        width: 66%;
+        margin-left: 326px;
+    }
+    .about_person_menu .menu_btns a {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+    .about_person_menu .menu_btns a.why_book {
+        margin-right: 8px;
+    }
+    .about_person_menu .login_registration_btn a {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .about_author {
+        width: 90%;
+        margin-top: 90px;
+        padding: 30px 0 25px 60px;
+    }
+    .about_author h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .about_author p {
+        font-size: 22px;
+        width: 57%;
+        letter-spacing: 1px;
+    }
+    .learn_about p {
+        font-size: 24px;
+        margin: 0 0 22px 0;
+    }
+    .learn_about a,.our_mission .learn_about a {
+        padding: 15px 50px;
+        font-size: 22px;
+    }
+    .about_us {
+        height: 730px;
+    }
+    .about_company {
+        width: 780px;
+        height: 430px;
+        margin-top: -55px;
+        padding: 105px 0 0 92px;
+        background: linear-gradient(to bottom, #fdfbdd 48%, transparent 67%) repeat scroll 0 0;
+    }
+    .about_company h2 {
+        font-size: 28px;
+        margin: 0 0 30px 0;
+    }
+    .about_company p {
+        font-size: 18px;
+        width: 96%;
+    }
+    .about_founder h2 {
+        font-size: 40px;
+        line-height: 1.15;
+        margin: 0px 0 40px 0;
+    }
+    .about_founder p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 20px 30px;
+        width: 47%;
+        margin: 0 0 0 225px;
+    }
+    .about_us img {
+        right: 18%;
+        width: 212px;
+    }
+    .about_academy {
+        padding: 70px 0 0 0;
+    }
+    .about_academy_left {
+        width: 200px;
+        margin-right: 80px;
+    }
+    .about_academy_text p {
+        margin: 85px 0 0 0;
+        font-size: 25px;
+        line-height: 1.5;
+        width: 670px;
+    }
+    .success_section {
+        background-size: cover;
+        margin-top: -50px;
+        padding: 110px 0 100px 0;
+    }
+    .success_details .success_text {
+        background-color: #fafbf9;
+        padding: 25px 30px;
+        margin: 125px 60px 0 0;
+        width: 720px;
+    }
+    .success_details .success_text p {
+        font-size: 19px;
+        line-height: 1.6;
+    }
+    .success_img {
+        width: 200px;
+    }
+    .enterpreneur {
+        padding: 90px 0 80px 0;
+    }
+    .enterpreneur p{
+        width: 80%;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .freedom {
+        height: 550px;
+        padding-top: 315px;
+    }
+    .freedom h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .our_mission {
+        padding: 50px 0 40px 0;
+    }
+    .our_mission_heading {
+        margin: 0 0 50px 0;
+    }
+    .our_mission_heading h2 {
+        font-size: 45px;
+    }
+    .make_money p {
+        width: 695px;
+        font-size: 30px;
+        line-height: 1.15;
+    }
+    .make_money p > span:not(:first-child) {
+        font-size: 35px;
+    }
+    .our_mission .learn_about {
+        margin: 50px auto 0 auto;
+    }
+    .our_mission .learn_about p {
+        font-size: 25px;
+    }
+    .consultation_call {
+        padding: 50px 0 250px 0;
+    }
+    .consultation_details h2 {
+        font-size: 30px;
+    }
+    .consultation_details ul li {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1399px){
+    header {
+        padding: 12px 0;
+    }
+    header .logo {
+        width: 180px;
+    }
+    .about_person {
+        padding: 6px 0 35px 0;
+    }
+    .about_person_menu {
+        width: 68%;
+        margin-left: 250px;
+    }
+    .about_person_menu .menu_btns a {
+        font-size: 17px;
+        padding: 6px 8px;
+    }
+    .about_author {
+        width: 90%;
+        margin-top: 70px;
+        padding: 20px 50px;
+    }
+    .about_author h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .about_author p {
+        font-size: 19px;
+        width: 61%;
+        letter-spacing: 1px;
+    }
+    .learn_about, .our_mission .learn_about {
+        text-align: center;
+        width: 40%;
+        margin: 35px auto 0 auto;
+    }
+    .learn_about p,.our_mission .learn_about p {
+        font-size: 19px;
+        margin: 0 0 20px 0;
+        letter-spacing: 0;
+        line-height: 1.2;
+    }
+    .learn_about a, .our_mission .learn_about a {
+        padding: 10px 38px;
+        font-size: 19px;
+    }
+    .about_us {
+        height: 620px;
+    }
+    .about_company {
+        width: 680px;
+        height: 330px;
+        margin-top: -50px;
+        padding: 90px 0 0 85px;
+        background: linear-gradient(to bottom, #fdfbdd 48%, transparent 67%) repeat scroll 0 0;
+    }
+    .about_company h2 {
+        font-size: 22px;
+        margin: 0 0 25px 0;
+    }
+    .about_company p {
+        font-size: 17px;
+        width: 96%;
+    }
+    .about_founder h2 {
+        font-size: 30px;
+        margin: 0px 0 30px 0;
+    }
+    .about_founder p {
+        font-size: 17px;
+        padding: 20px 30px;
+        width: 50%;
+        margin: 0 0 0 165px;
+    }
+    .about_us img {
+        right: 19%;
+        width: 185px;
+    }  
+    .about_academy {
+        padding: 55px 0 0 0;
+    } 
+    .about_academy_left {
+        width: 180px;
+        margin-right: 80px;
+    }
+    .about_academy_text p {
+        margin: 70px 0 0 0;
+        font-size: 22px;
+        width: 618px;
+    }
+    .success_section {
+        /* background-size: cover; */
+        margin-top: -50px;
+        padding: 110px 0 70px 0;
+    }
+    .success_details .success_text {
+        padding: 25px 30px;
+        margin: 105px 60px 0 0;
+        width: 660px;
+    }
+    .success_details .success_text p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .success_img {
+        width: 180px;
+    }
+    .enterpreneur {
+        padding: 70px 0 60px 0;
+    }
+    .enterpreneur p {
+        width: 64%;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    .freedom {
+        height: 400px;
+        padding-top: 248px;
+    }
+    .freedom h2 {
+        font-size: 30px;
+    }
+    .our_mission {
+        padding: 45px 0;
+    }
+    .our_mission_heading {
+        margin: 0 0 40px 0;
+    }
+    .our_mission_heading h2 {
+        font-size: 35px;
+    }
+    .make_money p {
+        width: 480px;
+        font-size: 22px;
+    }
+    .make_money p > span:not(:first-child) {
+        font-size: 28px;
+    }
+    .consultation_call {
+        padding: 40px 0 180px 0;
+        background-size: contain;
+    }
+    .consultation_details h2 {
+        font-size: 25px;
+    }
+    .consultation_details ul {
+        margin-top: 30px;
+    }
+    .consultation_details ul li {
+        font-size: 18px;
+        padding: 3px 0;
+    }
+}
+
+@media (max-width: 1199px){
+    header {
+        padding: 10px 0;
+    }
+    header .logo {
+        width: 120px;
+    }
+    .about_person_menu {
+        width: 75%;
+        margin-left: 180px;
+    }
+    .about_person_menu .menu_btns a {
+        font-size: 15px;
+        padding: 4px 6px;
+    }
+    .about_person_menu .menu_btns a.why_book {
+        margin-right: 5px;
+    }
+    .about_person_menu .login_registration_btn a {
+        font-size: 14px;
+        padding: 3px 8px;
+    }
+    .about_author {
+        width: 90%;
+        padding: 20px 30px;
+        margin: 50px auto 0 auto;
+    }
+    .about_author h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .about_author p {
+        font-size: 16px;
+        width: 65%;
+        letter-spacing: 1px;
+    }
+    .learn_about, .our_mission .learn_about {
+        text-align: center;
+        width: 50%;
+        margin: 30px auto 0 auto;
+    }
+    .learn_about p, .our_mission .learn_about p {
+        font-size: 17px;
+        margin: 0 0 20px 0;
+        letter-spacing: 0;
+        line-height: 1.2;
+    }
+    .learn_about a, .our_mission .learn_about a {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+    .about_us {
+        height: 605px;
+    }
+    .about_company h2 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    .about_company p {
+        font-size: 15px;
+        width: 93%;
+    }
+    .about_founder h2 {
+        font-size: 22px;
+        margin: 0px 0 25px 0;
+    }
+    .about_founder p {
+        font-size: 16px;
+        padding: 15px 20px;
+        width: 53%;
+        margin: 0 0 0 95px;
+    }
+    .about_us img {
+        right: 18%;
+        width: 170px;
+    }
+    .about_academy {
+        padding: 50px 0 0 0;
+    }
+    .about_academy_left {
+        width: 150px;
+        margin-right: 80px;
+    }
+    .about_academy_text p {
+        margin: 45px 0 0 0;
+        font-size: 20px;
+        width: 600px;
+    }
+    .success_details .success_text {
+        padding: 20px 25px;
+        margin: 95px 60px 0 0;
+        width: 635px;
+    }
+    .success_details .success_text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .success_img {
+        width: 150px;
+    }
+    .enterpreneur p {
+        width: 69%;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    .freedom {
+        height: 380px;
+        padding-top: 228px;
+    }
+    .freedom h2 {
+        font-size: 26px;
+    }
+    .consultation_details h2 {
+        font-size: 20px;
+        width: 45%;
+    }
+    .consultation_details ul li {
+        font-size: 15px;
+        padding: 2px 0;
+    }
+}
+
+@media (max-width: 767px){
+    .about_person {
+        background: #cec8bf url(../images/mobile-bg1.png) no-repeat;
+        background-position: top -250px center;
+        background-size: cover;
+        height: 900px;
+    }
+    .about_person_menu{display: none;}
+    .about_author {
+        width: 90%;
+        padding: 20px 30px;
+        margin: 435px auto 0 auto;
+        background: transparent;
+    }
+    .about_author h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        color: #ffffe8;
+    }
+    .about_author p {
+        font-size: 25px;
+        width: 100%;
+        letter-spacing: 1px;
+        color: #ffffe8;
+    }
+    .learn_about{display: none;}
+    .about_us{
+        background-color: #fcfae4;
+        height: 490px;
+    }
+    .about_us::before {
+        content: "";
+        background: url(../images/mobile-about-us-bg1.png) no-repeat scroll center top / cover;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        z-index: -1;
+    }
+    .about_us::after {
+        content: "";
+        background: rgba(0, 0, 0, 0) url(../images/mobile-about-us-bg2.png) no-repeat bottom -50px center / cover;
+        /* background-position: top center; */
+        position: absolute;
+        top: 26%;
+        left: 0;
+        width: 100%;
+        height: 74%;
+        z-index: -2;
+    }
+    .about_company {
+        width: 100%;
+        height: inherit;
+        margin-top: 0;
+        padding: 20px 30px 0 30px;
+        background: none;
+        border-radius: 0;
+    }
+    .about_us img {
+        right: 14%;
+        width: 200px;
+        bottom: -70px;
+        z-index: -1;
+    }
+    .about_founder {
+        height: 550px;
+        margin-top: 0;
+        position: absolute;
+        width: 100%;
+        bottom: -112%;
+        left: 0;
+        background-color: #fdfbdd;
+        padding: 50px 0 190px 0;
+        z-index: 1;
+    }
+    .about_founder h2 {
+        font-size: 25px;
+        margin: 0;
+        background-color: #e0ecf6;
+        color: #6d9fca;
+        display: inline-block;
+        padding: 5px 20px;
+        z-index: 2;
+        position: absolute;
+        top: 65px;
+    }
+    .about_founder p {
+        font-size: 21px;
+        padding: 70px 20px 30px 20px;
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        font-family: 'Geomanist';
+    }
+    .about_academy {
+        padding: 30px 0 0 0;
+        margin-top: 550px;
+    }
+    .mobile_about_academy{
+        flex-direction: column;
+    }
+    .about_academy_left {
+        width: 150px;
+        margin: 0 auto 50px auto;
+    }
+    .about_academy_text p {
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+        padding: 0 25px;
+        font-family: 'Geomanist';
+        text-align: justify;
+    }
+    .success_section {
+        margin-top: 0;
+        padding: 80px 0 70px 0;
+        background-size: contain;
+        background-position: center top 160px;
+    }
+    .success_details{
+        flex-direction: column-reverse;
+    }
+    .success_img {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .success_details .success_text {
+        padding: 20px 25px;
+        margin: 95px auto 0 auto;
+        width: 90%;
+    }
+    .success_details .success_text p {
+        font-size: 20px;
+        font-family: 'Geomanist';
+    }
+    .enterpreneur {
+        padding: 50px 0;
+    }
+    .enterpreneur p {
+        width: 75%;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .freedom {
+        height: 300px;
+        padding-top: 240px;
+    }
+    .freedom h2 {
+        font-size: 28px;
+    }
+    .our_mission_heading {
+        margin: 0 0 50px 0;
+    }
+    .our_mission_heading h2 {
+        font-size: 45px;
+    }
+    .make_money p {
+        width: 100%;
+        font-size: 26px;
+        padding: 0 20px;
+    }
+    .make_money p > span:not(:first-child) {
+        font-size: 30px;
+    }
+    .our_mission .learn_about {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .our_mission .learn_about p {
+        font-size: 26px;
+        margin: 0 0 20px 0;
+        letter-spacing: 0;
+        line-height: 1.2;
+    }
+    .learn_about a, .our_mission .learn_about a {
+        padding: 15px 90px;
+        font-size: 18px;
+    }
+    .consultation_call {
+        padding: 881px 0 40px 0;
+        background-size: auto;
+    }
+    .consultation_details {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .consultation_details h2 {
+        font-size: 21px;
+        width: 56%;
+    }
+    ul.small_mr{
+        margin-top: 0;
+    }
+    .consultation_call .learn_about{
+        display: block;
+    }
+    .consultation_call .learn_about a{
+        font-size: 16px;
+    }
+    .go_up{
+        display: block;
+        width: 10%;
+        margin: 30px auto 30px auto;
+        cursor: pointer;
+    }
+    .go_up img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 574px){
+    header .logo {
+        width: 100px;
+    }
+    .about_person {
+        background: #cec8bf url(../images/mobile-bg1.png) no-repeat;
+        background-position: top -80px center;
+        background-size: cover;
+        height: 640px;
+    }
+    .about_author {
+        width: 100%;
+        padding: 0;
+        margin: 430px auto 0 auto;
+    }
+    .about_author h2 {
+        font-size: 20px;
+    }
+    .about_author p {
+        font-size: 16px;
+    }
+    .about_us {
+        height: 400px;
+    }
+    .about_us::before {
+        height: 58%;
+    }
+    .about_us::after {
+        background: rgba(0, 0, 0, 0) url(../images/mobile-about-us-bg2.png) no-repeat bottom -27px center / cover;
+    }
+    .about_us img {
+        right: 8%;
+        width: 135px;
+        bottom: -40px;
+        z-index: -1;
+    }
+    .about_company {
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+    .about_company h2 {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+    .about_company p {
+        font-size: 13px;
+        width: 100%;
+    }
+    .about_founder {
+        height: 475px;
+        bottom: -118%;
+    }
+    .about_founder h2 {
+        font-size: 18px;
+        padding: 5px 10px;
+        top: 34px;
+    }
+    .about_founder p {
+        font-size: 16px;
+        padding: 45px 5px 25px 5px;
+        width: 85%;
+        top: 25px;
+    }
+    .about_academy {
+        padding: 25px 0 0 0;
+        margin-top: 475px;
+    }
+    .about_academy_left {
+        width: 130px;
+        margin: 0 auto 20px auto;
+    }
+    .about_academy_text p {
+        margin: 0;
+        font-size: 16px;
+        padding: 0;
+    }
+    .success_section {
+        margin-top: 0;
+        padding: 40px 0 20px 0;
+        background-size: contain;
+        background-position: center top 118px;
+    }
+    .success_img {
+        width: 130px;
+        margin: 0 auto;
+    }
+    .success_details .success_text {
+        padding: 15px;
+        margin: 45px auto 0 auto;
+        width: 100%;
+    }
+    .success_details .success_text p {
+        font-size: 16px;
+    }
+    .enterpreneur p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .enterpreneur {
+        padding: 30px 0;
+    }
+    .freedom {
+        height: 250px;
+        padding-top: 210px;
+    }
+    .freedom h2 {
+        font-size: 18px;
+    }
+    .our_mission {
+        padding: 30px 0;
+    }
+    .our_mission_heading h2 {
+        font-size: 22px;
+    }
+    .make_money p {
+        width: 100%;
+        font-size: 16px;
+        padding: 0px;
+    }
+    .make_money p > span:not(:first-child) {
+        font-size: 18px;
+    }
+    .our_mission .learn_about {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .our_mission .learn_about p {
+        font-size: 16px;
+    }
+    .consultation_call .learn_about a, .our_mission .learn_about a {
+        padding: 10px 15px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .consultation_call {
+        padding: 450px 0 42px 0;
+        background-size: contain;
+    }
+    .consultation_details {
+        padding: 0;
+    }
+    .consultation_details h2 {
+        font-size: 18px;
+        width: 90%;
+    }
+    .consultation_details ul {
+        margin-top: 20px;
+    }
+    ul.small_mr{margin-top: 0;}
+    .consultation_details ul li {
+        font-size: 13px;
+        padding: 0;
+    }
+    .consultation_call .learn_about a{
+        border-width: 1px;
+    }
+}
