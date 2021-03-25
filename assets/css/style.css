@@ -56,6 +56,14 @@
 }
 
 @font-face{ 
+	font-family: 'Stolzl-Thin';
+    src: url('../fonts/Stolzl-Thin.eot');
+	src: url('../fonts/Stolzl-Thin.eot') format('embedded-opentype'),
+	     url('../fonts/Stolzl-Thin.woff') format('woff'),
+	     url('../fonts/Stolzl-Thin.ttf') format('truetype');
+}
+
+@font-face{ 
 	font-family: 'Stolzl-Light';
     src: url('../fonts/Stolzl-Light.eot');
 	src: url('../fonts/Stolzl-Light.eot') format('embedded-opentype'),
@@ -608,18 +616,27 @@ header .logo img{
 .consultation_details ul{
     margin-top: 40px;
 }
-.consultation_details ul li{
+.consultation_details ul li {
     list-style-type: none;
     font-family: 'Stolzl-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 29.17px;
     color: #68681e;
-    padding: 5px 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.consultation_call .learn_about{
+    width: 100%;
+    margin: 67px auto 0 auto;
 }
 
 .consultation_call .learn_about a {
     color: #68681e;
-    padding: 20px 73px;
+    padding: 29px 185px;
     border: 2px solid #215d82;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 41.67px;
 }
 
 .consultation_call .learn_about a:hover{
@@ -925,6 +942,10 @@ header .logo img{
     .about_academy {
         padding: 70px 0 0 0;
     } 
+    .mobile_about_academy {
+        justify-content: start !important;
+        padding-left: 26px;
+    }
     .about_academy_left {
         width: 180px;
         margin-right: 80px;
@@ -960,8 +981,9 @@ header .logo img{
         line-height: 1.4;
     }
     .freedom {
-        height: 400px;
-        padding-top: 240px;
+        height: 526px;
+        padding-top: 300px;
+        background: url(../images/freedom.png) no-repeat center center / contain;
     }
     .freedom h2 {
         font-size: 40px;
@@ -987,14 +1009,27 @@ header .logo img{
         background-size: contain;
     }
     .consultation_details h2 {
-        font-size: 25px;
+        font-size: 29px;
     }
     .consultation_details ul {
         margin-top: 30px;
     }
     .consultation_details ul li {
-        font-size: 18px;
+        font-size: 20px;
         padding: 3px 0;
+    }
+    .consultation_call .learn_about {
+        margin: 50px auto 0 auto;
+    }
+    .consultation_call .learn_about a {
+        padding: 20px 148px;
+        border-radius: 5px;
+        font-size: 23px;
+        font-family: 'Stolzl-Medium';
+        border-width: 1px;
+    }
+    .consultation_call .learn_about a:hover{
+        border-width: 1px;
     }
 }
 
@@ -1405,6 +1440,10 @@ header .logo img{
         height: 715px;
         bottom: -177%;
     }
+    .about_academy {
+        padding: 30px 0 0 0;
+        margin-top: 718px;
+    }
     .about_academy_left {
         width: 220px;
         margin: 0 auto 20px auto;
@@ -1469,7 +1508,7 @@ header .logo img{
         letter-spacing: 1px;
     }
     .consultation_call .learn_about a, .our_mission .learn_about a {
-        padding: 15px 40px;
+        padding: 17px 80px;
         font-size: 20px;
         border-radius: 5px;
     }
@@ -1492,22 +1531,22 @@ header .logo img{
 }
 
 @media (max-width: 400px){
+    header {
+        padding: 16px 0;
+    }
     .container{
         width: 320px;
     }
     header .logo {
-        width: 100px;
+        width: 110px;
     }
     .about_person {
-        background: #cec8bf url(../images/mobile-bg1.png) no-repeat;
-        background-position: top -80px center;
-        background-size: cover;
-        height: 640px;
+        height: 540px;
     }
     .about_author {
         width: 100%;
         padding: 0;
-        margin: 410px auto 0 auto;
+        margin: 240px auto 0 auto;
     }
     .about_author h2 {
         font-size: 22px;
@@ -1525,10 +1564,8 @@ header .logo img{
         background: rgba(0, 0, 0, 0) url(../images/mobile-about-us-bg2.png) no-repeat bottom -27px center / cover;
     }
     .about_us img {
-        right: 8%;
-        width: 135px;
-        bottom: -40px;
-        z-index: -1;
+        right: 11%;
+        width: 145px;
     }
     .about_company {
         width: 100%;
@@ -1600,8 +1637,8 @@ header .logo img{
         padding: 30px 0;
     }
     .freedom {
-        height: 300px;
-        padding-top: 236px;
+        height: 330px;
+        padding-top: 255px;
     }
     .freedom h2 {
         font-size: 22px;
@@ -1653,7 +1690,16 @@ header .logo img{
         font-size: 13px;
         padding: 0;
     }
-    .consultation_call .learn_about a{
+    .consultation_call .learn_about{
+        margin: 35px auto 0 auto;
+    }
+    .consultation_call .learn_about a {
         border-width: 1px;
+        padding: 14px 70px;
+        font-size: 17px;
+    }
+    .go_up {
+        display: block;
+        width: 13%;
     }
 }
